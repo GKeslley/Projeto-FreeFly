@@ -1,3 +1,16 @@
+.introducao {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 150px;
+  z-index: 1;
+}
+
+.introducao h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
 .paraquedas-img {
   width: 100%;
   z-index: 1;
@@ -10,22 +23,6 @@
   width: 100%;
 }
 
-.introducao {
-  justify-self: center;
-  align-self: center;
-  z-index: 1;
-}
-
-.introducao h1 {
-  font-family: "Antonio";
-  color: white;
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  letter-spacing: 0.2rem;
-  margin-top: 30px;
-}
-
 @keyframes float {
   from {
     transform: translate3d(0, 20px, 0);
@@ -35,11 +32,14 @@
   }
 }
 
-@keyframes estrela {
-  from {
+@keyframes motanhas {
+  0% {
     transform: translate3d(0, 0px, 0);
   }
-  to {
-    transform: translate3d(0, 20px, 0);
+  50% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
   }
 }

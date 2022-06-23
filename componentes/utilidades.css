@@ -1,0 +1,21 @@
+.container {
+  max-width: 1300px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.botton {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.445);
+  padding: 8px 15px;
+}
+
+.botton:hover {
+  background: rgb(3, 163, 226);
+}

@@ -1,5 +1,10 @@
 @import "./css/global.css";
 @import "./css/introducao.css";
+@import "./css/informacoes.css";
+@import "./css/planos.css";
+
+@import "./componentes/tipografia.css";
+@import "./componentes/utilidades.css";
 
 * {
   margin: 0;
@@ -8,9 +13,17 @@
 }
 
 body {
+  margin-bottom: 300px;
+}
+
+header {
   background-image: url(./img/23284.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   display: grid;
-  margin-bottom: 300px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
