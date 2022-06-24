@@ -2,9 +2,11 @@
 @import "./css/introducao.css";
 @import "./css/informacoes.css";
 @import "./css/planos.css";
+@import "./css/saltos.css";
 
 @import "./componentes/tipografia.css";
 @import "./componentes/utilidades.css";
+@import "./componentes/cores.css";
 
 * {
   margin: 0;
@@ -13,7 +15,7 @@
 }
 
 body {
-  margin-bottom: 300px;
+  margin-bottom: 600px;
 }
 
 header {

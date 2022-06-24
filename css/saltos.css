@@ -1,0 +1,64 @@
+.saltos {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.saltos span {
+  color: rgba(0, 183, 255, 0.315);
+}
+
+.saltos h1 {
+  margin-bottom: 60px;
+}
+
+.saltos-itens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.saltos-itens picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+  filter: grayscale(50%);
+  border-radius: 4px;
+}
+
+.saltos-itens {
+  position: relative;
+}
+
+.saltos-conteudo {
+  display: grid;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.saltos-conteudo:hover {
+  border-color: rgba(0, 0, 0, 0.788);
+  border-radius: 4px;
+}
+
+.saltos-conteudo p {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .saltos-itens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .saltos-itens {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

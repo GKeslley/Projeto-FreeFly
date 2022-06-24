@@ -29,3 +29,8 @@
 .fonte-p4 {
   font: 400 0.6rem/1.125 "Montserrat", sans-serif;
 }
+
+.fonte-B {
+  font: 500 2.2rem/1.125 "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+}
