@@ -32,14 +32,17 @@
   }
 }
 
-@keyframes motanhas {
-  0% {
-    transform: translate3d(0, 0px, 0);
+@media (max-width: 850px) {
+  .introducao {
+    margin-bottom: 20px;
   }
-  50% {
-    transform: translate3d(-5px, 0, 0);
+}
+
+@media (max-width: 480px) {
+  .introducao h1 {
+    font-size: 1.5rem;
   }
-  100% {
-    transform: translate3d(0px, 0, 0);
+  .introducao span {
+    font-size: 2.5rem;
   }
 }
