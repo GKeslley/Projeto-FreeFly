@@ -10,18 +10,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500&family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
-
-
-
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
 
   <header class="introducao-bg">
     <section class="introducao">
-      <h1 class="fonte-detalhe">QUE TAL UMA INCRIVEL AVENTURA<br><span class="fonte-principal">NOS ARES?</span></h1>
+      <h1 class="fonte-detalhe fadeInDown" data-anime="200">QUE TAL UMA INCRIVEL AVENTURA<br><span class="fonte-principal fadeInDown" data-anime="400">NOS ARES?</span></h1>
 
-      <picture class="paraquedas-img">
+      <picture class="paraquedas-img fadeInUp" data-anime="600">
         <img src="./img/paraquedas2.png" alt="">
       </picture>
 
@@ -29,7 +27,7 @@
   </header>
 
   <main>
-    <section class="infos container">
+    <section class="infos container js-content">
       <div>
         <h1 class="fonte-secundaria">Já conseguiu imaginar vivendo uma aventura radical como essa? Com a FreeFly tudo é possível!</h1>
       </div>
@@ -41,7 +39,7 @@
 
     <section class="planos-bg">
       <div class="planos container">
-        <div class="planos-conteudo">
+        <div class="planos-conteudo js-content">
           <h1 class="fonte-principal cor-p1">Conheça nossos planos<span class="cor-0">.</span></h1>
           <div class="planos-itens">
 
@@ -55,7 +53,7 @@
                 <li>Maiores descontos</li>
                 <li>Diversão garantida!</li>
               </ul>
-              <a class="botton  fonte-ppp" href="">ADQUIRIR</a>
+              <a class="botton fonte-ppp" href="">ADQUIRIR</a>
             </div>
 
             <div class="planos-item">
@@ -126,7 +124,8 @@
 
     </section>
   </main>
-  <script src="./script.js"></script>
+  <script src="./javascript/plugins/simple-anime.js"></script>
+  <script src="./javascript/script.js"></script>
 </body>
 
 </html>
