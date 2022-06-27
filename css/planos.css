@@ -27,6 +27,10 @@
   padding: 20px;
 }
 
+.planos-item a {
+  margin-left: 20px;
+}
+
 .planos-item p {
   margin-bottom: 15px;
 }

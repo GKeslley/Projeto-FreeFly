@@ -1,4 +1,9 @@
-const animationContent = document.querySelectorAll(".js-content");
+// Animação Introdução
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
+
+const animationContent = document.querySelectorAll("[data-content='content']");
 const heigthWindow = window.innerHeight * 0.6;
 
 function animation() {
@@ -12,7 +17,16 @@ function animation() {
 
 window.addEventListener("scroll", animation);
 
-// Animação
-if (window.SimpleAnime) {
-  new SimpleAnime();
+const directionContentDiv = document.querySelectorAll("[data-direction]");
+
+function animationDirection() {
+  directionContentDiv.forEach((item) => {
+    const setItem = item.dataset.direction;
+    const itemTop = item.getBoundingClientRect().top - heigthWindow;
+    if (itemTop < 0) {
+      item.classList.add(setItem);
+    }
+  });
 }
+
+window.addEventListener("scroll", animationDirection);

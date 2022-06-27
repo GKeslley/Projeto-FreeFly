@@ -2,6 +2,10 @@
   font: 900 3rem/1.125 "Montserrat", sans-serif;
 }
 
+.fonte-subprincipal {
+  font: 600 3rem/1.125 "Montserrat", sans-serif;
+}
+
 .fonte-detalhe {
   font: 400 2rem/1.125 "Montserrat", sans-serif;
 }

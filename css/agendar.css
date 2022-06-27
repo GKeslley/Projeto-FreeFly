@@ -1,0 +1,33 @@
+.agendar-bg {
+  display: grid;
+  background-image: url(/img/galeria-saltos/IMG_5740.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: grayscale(50%);
+  height: 500px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.agendar-conteudo {
+  align-self: center;
+}
+
+.agendar {
+  color: white;
+}
+
+.agendar h1 {
+  margin-bottom: 20px;
+}
+
+.agendar p {
+  margin-bottom: 15px;
+}
+
+.agendar a {
+  color: white;
+}

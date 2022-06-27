@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>FreeFly</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,15 @@
 <body>
 
   <header class="introducao-bg">
+    <div class="menu">
+      <a class="fonte-M1" href="">FreeFly</a>
+      <div class="menu-itens">
+        <a class="fonte-ppp" href="">Planos</a>
+        <a class="fonte-ppp" href="">Informações</a>
+        <a class="fonte-ppp" href="">Contato</a>
+        <a class="fonte-ppp" href="">Agendar</a>
+      </div>
+    </div>
     <section class="introducao">
       <h1 class="fonte-detalhe fadeInDown" data-anime="200">QUE TAL UMA INCRIVEL AVENTURA<br><span class="fonte-principal fadeInDown" data-anime="400">NOS ARES?</span></h1>
 
@@ -27,7 +36,7 @@
   </header>
 
   <main>
-    <section class="infos container js-content">
+    <section class="infos container" data-content="content">
       <div>
         <h1 class="fonte-secundaria">Já conseguiu imaginar vivendo uma aventura radical como essa? Com a FreeFly tudo é possível!</h1>
       </div>
@@ -39,7 +48,7 @@
 
     <section class="planos-bg">
       <div class="planos container">
-        <div class="planos-conteudo js-content">
+        <div class="planos-conteudo" data-content="content">
           <h1 class="fonte-principal cor-p1">Conheça nossos planos<span class="cor-0">.</span></h1>
           <div class="planos-itens">
 
@@ -76,7 +85,7 @@
                 <li>Maiores descontos</li>
                 <li>Diversão garantida!</li>
               </ul>
-              <a class="botton  fonte-ppp" href="">ADQUIRIR</a>
+              <a class="botton fonte-ppp" href="">ADQUIRIR</a>
             </div>
 
           </div>
@@ -86,9 +95,9 @@
 
     <section class="saltos container">
       <h1 class="fonte-principal cor-p1">O que fazemos<span>.</span></h1>
-      <div class="saltos-itens">
+      <div class="saltos-itens" data-saltos="saltos-content">
 
-        <div class="salto-conteudo">
+        <div class="salto-conteudo" data-direction="left-direction">
           <picture>
             <img src="./img/galeria-saltos/salto-duplo-img.png" alt="">
           </picture>
@@ -98,7 +107,7 @@
           </div>
         </div>
 
-        <div class="salto-conteudo-cursos">
+        <div class="salto-conteudo-cursos" data-direction="right-direction">
           <div class="salto-infos">
             <h2 class="fonte-B">Cursos</h2>
             <p class="fonte-p">Que tal aprender a ser um aventureiro como a gente? Aqui você terá todo o suporte necessário para poder ser habilitado nacionalmente e ter acesso a ensinar esse esporte maravilhoso para aqueles que buscam emoção!</p>
@@ -108,7 +117,7 @@
           </picture>
         </div>
 
-        <div class="salto-conteudo">
+        <div class="salto-conteudo" data-direction="left-direction">
           <picture>
             <img src="./img/galeria-saltos/eventos-img.png" alt="">
           </picture>
@@ -117,13 +126,67 @@
             <p class="fonte-p">Essa aqui é so para os verdadeiros amantes do esporte! Fazemos eventos todos os anos com o maior número de paraquedistas possível, caso seja um iniciante, poderá participar acompanhado de um dos nossos profissionais. Vamos nessa!</p>
           </div>
         </div>
-
-      </div>
-
       </div>
 
     </section>
+
+    <section class="agendar-bg">
+      <div class="agendar-conteudo">
+        <div class="agendar container">
+          <h1 class="fonte-subprincipal">Não fique de fora dessa</h1>
+          <p class="fonte-M">Agende já!</p>
+          <a class="botton fonte-ppp" href="">AGENDAR</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <section class="contato container">
+    <div>
+      <h1 class="fonte-principal cor-p1">Contato.</h1>
+    </div>
+    <form class="form" action="">
+
+      <picture class="contato-img" data-direction="left-direction">
+        <img src="./img/galeria-saltos/localizacao-img.jpg" alt="">
+      </picture>
+
+      <div class="form-conteudo" data-direction="right-direction">
+        <input class="fonte-p" type="text" name="text" id="text" placeholder="Nome">
+
+        <input class="fonte-p" type="email" name="email" id="email" placeholder="Email">
+
+        <textarea class="fonte-p" name="area" id="area" cols="30" rows="10" placeholder="Mensagem"></textarea>
+
+        <a class="botton fonte-ppp" href="">ENVIAR</a>
+
+      </div>
+
+    </form>
+  </section>
+
+
+  <footer class="footer-bg" data-content="content">
+    <div class="footer-conteudo container">
+      <div>
+        <a class="fonte-M" href="./">FreeFly</a>
+      </div>
+      <div class="footer-contato">
+        <h2 class="fonte-M1">CONTATO</h2>
+        <a class="fonte-p" href="">+55 71 9999-9999</a>
+        <a class="fonte-p" href="">contato@bikcraft.com</a>
+        <p class="fonte-p">Rua Acarajé, 42 - Salvador</p>
+        <p class="fonte-p ">Salvador - BA</p>
+      </div>
+      <div class="footer-infos">
+        <h2 class="fonte-M1">INFORMAÇÕES</h2>
+        <a class="fonte-p" href="">Planos</a>
+        <a class="fonte-p" href="">Informações</a>
+        <a class="fonte-p" href="">Agendar</a>
+        <a class="fonte-p" href="">Contato</a>
+      </div>
+    </div>
+  </footer>
   <script src="./javascript/plugins/simple-anime.js"></script>
   <script src="./javascript/script.js"></script>
 </body>

@@ -1,0 +1,76 @@
+.contato {
+  margin-bottom: 120px;
+}
+
+.contato h1 {
+  margin-bottom: 40px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.form-conteudo {
+  display: grid;
+}
+
+.contato-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.form input {
+  display: block;
+  border: 1px solid rgb(150, 150, 150);
+  margin-bottom: 20px;
+  width: 90%;
+  padding: 15px;
+}
+
+.form textarea {
+  border: 1px solid rgb(150, 150, 150);
+  resize: none;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.form a {
+  display: block;
+  justify-self: start;
+  border: 1px solid rgb(71, 71, 71);
+  padding: 15px 30px;
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .contato-img img {
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+  }
+}
+
+.js .contato-img {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.8s;
+}
+
+.js .contato-img.left-direction {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.js .form-conteudo {
+  opacity: 0;
+  transform: translate3d(30px, 0, 0);
+  transition: 0.5s;
+}
+.js .form-conteudo.right-direction {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

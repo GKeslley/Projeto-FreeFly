@@ -1,3 +1,31 @@
+.menu {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  align-items: center;
+}
+
+.menu > a {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-itens {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-itens a:hover {
+  color: rgba(0, 183, 255, 0.315);
+}
+
 .introducao {
   justify-self: center;
   align-self: center;
@@ -34,7 +62,7 @@
 
 @media (max-width: 850px) {
   .introducao {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 
