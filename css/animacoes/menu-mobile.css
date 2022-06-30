@@ -1,0 +1,57 @@
+[data-button="button"] {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .menu > a {
+    display: none;
+  }
+
+  .menu {
+    margin: 10px 0;
+  }
+  [data-button="button"] {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+    z-index: 300;
+    transition: 0.3s;
+  }
+  [data-button="button"]::before {
+    content: "";
+    background: white;
+    display: inline-block;
+    height: 6px;
+    width: 38px;
+    box-shadow: 0 12px white, 0 -12px white;
+  }
+  [data-list="list"] {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    z-index: 200;
+    top: 0;
+    margin: 60px 0 20px 0;
+    background: rgba(3, 101, 214, 0.404);
+    border-radius: 4px;
+  }
+  [data-list="list"] li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    z-index: 1000;
+  }
+
+  [data-list="list"] li + li {
+    margin-top: 20px;
+  }
+  [data-list="list"].activeList {
+    display: block;
+  }
+  [data-button="button"].activeList {
+    transform: rotate(90deg);
+  }
+}

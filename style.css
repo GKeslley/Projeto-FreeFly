@@ -7,6 +7,8 @@
 @import "./css/contato.css";
 @import "./css/footer.css";
 
+@import "./css/animacoes/menu-mobile.css";
+
 @import "./componentes/tipografia.css";
 @import "./componentes/utilidades.css";
 @import "./componentes/cores.css";
@@ -28,4 +30,8 @@ header {
 img {
   display: block;
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
 }
