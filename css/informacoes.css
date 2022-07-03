@@ -1,58 +1,76 @@
-.infos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  padding-bottom: 60px;
+.saltos {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.infos h1 {
-  letter-spacing: 0.1rem;
+.saltos h1 {
+  margin-bottom: 60px;
 }
 
-.airplane-img {
-  background: linear-gradient(white 50%, rgba(0, 183, 255, 0.315) 0%);
-  border-radius: 50%;
+.salto-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 20px;
 }
 
-.airplane-img img {
-  padding: 30px;
+.salto-conteudo-cursos {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 20px;
 }
 
-@keyframes helicopter {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-30px, 0, 0);
-  }
+.salto-infos h2 {
+  margin-bottom: 10px;
+}
+
+.salto-conteudo picture,
+.salto-conteudo-cursos picture {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.4s;
+}
+
+.salto-conteudo picture:hover,
+.salto-conteudo-cursos picture:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  box-sizing: border-box;
 }
 
 @media (max-width: 850px) {
-  .infos {
+  .salto-conteudo,
+  .salto-conteudo-cursos {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 500px) {
-  .infos h1 {
-    font-size: 1.5rem;
+  .salto-conteudo-cursos .salto-infos {
+    grid-row: 2;
+  }
+  .salto-infos {
+    margin-bottom: 40px;
   }
 }
 
-@media (max-width: 390px) {
-  .airplane-img {
-    display: none;
-  }
-}
-
-.js [data-content="content"] {
+.js .salto-conteudo {
   opacity: 0;
-  transform: translate3d(0, 40px, 0);
+  transform: translate3d(-30px, 0, 0);
   transition: 0.8s;
 }
 
-.js [data-content="content"].ativo {
+.js .salto-conteudo.left-direction {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.js .salto-conteudo-cursos {
+  opacity: 0;
+  transform: translate3d(30px, 0, 0);
+  transition: 0.5s;
+}
+.js .salto-conteudo-cursos.right-direction {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }

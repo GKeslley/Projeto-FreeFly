@@ -17,7 +17,7 @@
 }
 
 .agendar {
-  color: white;
+  color: var(--cor-0);
 }
 
 .agendar h1 {
@@ -29,5 +29,5 @@
 }
 
 .agendar a {
-  color: white;
+  color: var(--cor-0);
 }

@@ -10,7 +10,7 @@
 .botton {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: var(--cor-12);
   border: 2px solid rgba(255, 255, 255, 0.445);
   padding: 8px 15px;
 }

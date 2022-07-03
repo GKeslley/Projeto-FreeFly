@@ -1,5 +1,12 @@
+:root {
+  --cor-0: white;
+  --cor-1: rgb(250, 250, 250);
+  --cor-a1: rgba(0, 183, 255, 0.315) 0%;
+  --cor-12: black;
+}
+
 .cor-0 {
-  color: white;
+  color: var(--cor-0);
 }
 
 .cor-p1 {

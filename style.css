@@ -1,11 +1,13 @@
 @import "./css/global.css";
 @import "./css/introducao.css";
-@import "./css/informacoes.css";
+@import "./css/extra.css";
 @import "./css/planos.css";
-@import "./css/saltos.css";
+@import "./css/informacoes.css";
 @import "./css/agendar.css";
 @import "./css/contato.css";
 @import "./css/footer.css";
+
+@import "./css/agenda/agenda.css";
 
 @import "./css/animacoes/menu-mobile.css";
 

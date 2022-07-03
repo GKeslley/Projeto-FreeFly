@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeFly</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500&family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+
+
+<body class="menu-bg">
+  <section>
+    <div class="menu">
+      <a class="fonte-M1" href="./index.html">FreeFly</a>
+      <nav>
+        <button data-button="button">.</button>
+        <ul class="menu-itens" data-list="list">
+          <li><a class="fonte-ppp" href="">Planos</a></li>
+          <li><a class="fonte-ppp" href="">Informações</a></li>
+          <li><a class="fonte-ppp" href="">Contato</a></li>
+          <li><a class="fonte-ppp" href="./agenda.html">Agendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+
+  <article class="agenda container fadeInUp" data-anime="200">
+    <div class="agenda-localizacao">
+      <h1 class="fonte-L">Localização</h1>
+
+      <ul>
+        <div class="agenda-contato">
+          <span class="fonte-p">Contato</span>
+          <li><a class="fonte-ppp" href="">+55 71 9999-9999</a> </li>
+          <li><a class="fonte-ppp" href="">contato@freefly.com</a></li>
+        </div>
+
+        <div class="agenda-local">
+          <span class="fonte-p">Onde ficamos</span>
+          <li class="fonte-ppp">Rua Acarajé, 42</li>
+          <li class="fonte-ppp">Salvador - BA</li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="form-agenda">
+      <form action="">
+        <div>
+          <span class="fonte-ppp dados">Dados Pessoais</span>
+
+          <div class="grid-agenda">
+            <input class="fonte-p" type="text" name="text" id="text" placeholder="Nome">
+            <input class="fonte-p" type="text" name="text" id="text" placeholder="Sobrenome">
+          </div>
+
+          <input class="fonte-p" type="number" name="number" id="number" placeholder="CPF">
+          <input class="fonte-p" type="email" name="email" id="email" placeholder="Email">
+        </div>
+
+        <div class="grid-agenda">
+          <input class="fonte-p" type="text" name="cidade" id="cidade" placeholder="Cidade">
+          <input class="fonte-p" type="text" name="estado" id="estado" placeholder="Estado">
+        </div>
+        <a class="botton fonte-ppp" href="" data-agenda-button>ENVIAR</a>
+        <span class="fonte-ppp" data-feedback></span>
+      </form>
+    </div>
+  </article>
+
+  <footer class="footer-bg">
+    <div class="footer-conteudo container">
+      <div>
+        <a class="fonte-M" href="./">FreeFly</a>
+      </div>
+      <div class="footer-contato">
+        <h2 class="fonte-M1">CONTATO</h2>
+        <a class="fonte-p" href="">+55 71 9999-9999</a>
+        <a class="fonte-p" href="">contato@bikcraft.com</a>
+        <p class="fonte-p">Rua Acarajé, 42 - Salvador</p>
+        <p class="fonte-p ">Salvador - BA</p>
+      </div>
+      <div class="footer-infos">
+        <h2 class="fonte-M1">INFORMAÇÕES</h2>
+        <a class="fonte-p" href="">Planos</a>
+        <a class="fonte-p" href="">Informações</a>
+        <a class="fonte-p" href="./agenda.html">Agendar</a>
+        <a class="fonte-p" href="">Contato</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./javascript/plugins/simple-anime.js"></script>
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>

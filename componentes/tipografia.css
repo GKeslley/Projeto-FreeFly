@@ -6,6 +6,15 @@
   font: 600 3rem/1.125 "Montserrat", sans-serif;
 }
 
+.fonte-M {
+  font: 400 2.5rem/1.125 "Montserrat", sans-serif;
+}
+
+.fonte-B {
+  font: 500 2.2rem/1.125 "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
 .fonte-detalhe {
   font: 400 2rem/1.125 "Montserrat", sans-serif;
 }
@@ -14,12 +23,12 @@
   font: 500 2rem/1.3 "Source Sans Pro", sans-serif;
 }
 
-.fonte-M {
-  font: 400 2.5rem/1.125 "Montserrat", sans-serif;
-}
-
 .fonte-M1 {
   font: 400 2rem/1.125 "Montserrat", sans-serif;
+}
+
+.fonte-L {
+  font: 400 1.5rem/1.34 "Montserrat", sans-serif;
 }
 
 .fonte-p {
@@ -32,9 +41,4 @@
 
 .fonte-p4 {
   font: 400 0.6rem/1.125 "Montserrat", sans-serif;
-}
-
-.fonte-B {
-  font: 500 2.2rem/1.125 "Montserrat", sans-serif;
-  letter-spacing: 0.1rem;
 }

@@ -5,7 +5,6 @@ if (window.SimpleAnime) {
 
 const animationContent = document.querySelectorAll("[data-content='content']");
 const heigthWindow = window.innerHeight * 0.6;
-
 function animation() {
   animationContent.forEach((item) => {
     const topItem = item.getBoundingClientRect().top - heigthWindow;
@@ -65,3 +64,22 @@ function outsideClick(element, callback) {
 }
 
 button.addEventListener("click", clickButton);
+
+if (window.location.href.includes("agenda.html")) {
+  const buttonAgenda = document.querySelector("[data-agenda-button]");
+
+  function clickAgenda(event) {
+    event.preventDefault();
+    buttonAgenda.innerText = "Enviando";
+    for (let i = 0; i < 10; i++) {
+      setTimeout(() => {
+        buttonAgenda.innerText = "Enviar";
+        const feedback = document.querySelector("[data-feedback]");
+        feedback.classList.add("ativo");
+        feedback.innerText = "Mensagem enviada com sucesso";
+      }, 1000 * 2);
+    }
+  }
+
+  buttonAgenda.addEventListener("click", clickAgenda);
+}

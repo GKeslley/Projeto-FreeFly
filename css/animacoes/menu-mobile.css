@@ -23,11 +23,11 @@
   }
   [data-button="button"]::before {
     content: "";
-    background: white;
+    background: var(--cor-0);
     display: inline-block;
     height: 6px;
     width: 38px;
-    box-shadow: 0 12px white, 0 -12px white;
+    box-shadow: 0 12px var(--cor-0), 0 -12px var(--cor-0);
   }
   [data-list="list"] {
     display: none;
