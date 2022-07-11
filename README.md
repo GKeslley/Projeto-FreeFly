@@ -2,7 +2,7 @@
 
 Uma landing page simulando um agendamento para pular de paraquedas.
 
-Para a construção do layout, eu me inspirei em projetos encontrados na aplicação feita por outros aplicações que utilizam paraquedismo profissionalmente.
+Para a construção do layout, eu me inspirei em projetos encontrados por outras aplicações que utilizam paraquedismo profissionalmente.
 
 Conceitos abordados
 
