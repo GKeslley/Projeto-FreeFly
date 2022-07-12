@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 900px) {
+  .planos-bg {
+    background-size: 100vh;
+    background-attachment: fixed;
+  }
   .planos-item > p {
     font-size: 2rem;
   }
