@@ -1,6 +1,6 @@
 .agendar-bg {
   display: grid;
-  background-image: url(/img/galeria-saltos/IMG_5740.jpg);
+  background-image: url(../img/galeria-saltos/IMG_5740.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-size: cover;
