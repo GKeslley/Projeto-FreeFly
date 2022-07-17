@@ -62,36 +62,22 @@
 
 .agenda-contato li:nth-child(even),
 .agenda-contato li:nth-child(odd),
-.agenda-local li:nth-child(even) {
+.agenda-local li:nth-child(even),
+.agenda-local li:nth-child(odd) {
   display: flex;
   align-items: center;
 }
 
 .agenda-contato li:nth-child(even)::before,
 .agenda-contato li:nth-child(odd)::before,
-.agenda-local li:nth-child(even)::before {
+.agenda-local li:nth-child(even)::before,
+.agenda-local li:nth-child(odd)::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
+  background: white;
+  width: 12px;
+  height: 4px;
   margin-right: 8px;
-}
-
-.agenda-contato li:nth-child(even)::before {
-  background-image: url(/img/icones/telefone.svg);
-}
-
-.agenda-contato li:nth-child(odd)::before {
-  background-image: url(/img/icones/email.svg);
-}
-
-.agenda-local li:nth-child(even)::before {
-  background-image: url(/img/icones/local.svg);
-}
-
-.agenda-local li:nth-child(odd) {
-  margin-left: 28px;
 }
 
 .dados {
